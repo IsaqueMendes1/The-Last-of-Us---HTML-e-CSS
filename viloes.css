@@ -1,0 +1,49 @@
+@font-face {
+    font-family:'tlou' ;
+    src: url('./HeadlinerNo.45\ DEMO.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    background: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    color: rgb(243, 241, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1.5s;
+    cursor: pointer;
+    font-family: 'tlou', sans-serif;
+    font-size: 25px;
+}
+
+li:hover {
+    color: #d5af7a;
+}
+
+#logo {
+    width: auto;
+    height: 85px;
+}

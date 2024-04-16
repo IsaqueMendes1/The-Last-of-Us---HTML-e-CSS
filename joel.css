@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'tlou';
+    src: url('./HeadlinerNo.45\ DEMO.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: black;
+}
+
+header {
+    height: 90px;
+    background: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    color: rgb(243, 241, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1.5s;
+    cursor: pointer;
+    font-family: 'tlou', sans-serif;
+    font-size: 25px;
+}
+
+li:hover {
+    color: #d5af7a;
+}
+
+#logo {
+    width: auto;
+    height: 85px;
+}
+
+.card-caracter-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card-content {
+        color: #d5af7a;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        column-gap: 40px;
+    
+}
+
+.card-1 {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 20px 10px;
+    color: #d5af7a;
+    font-size: 23px;
+    font-family: 'tlou', sans-serif;
+}
+
+.card-1:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('./Joel.jpg');
+}
+
+/* .text {
+    display: flex;
+    flex-direction: column;
+    color: #d5af7a;
+    align-items: right;
+} */
+
+.card-2 {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 20px 10px;
+    color: #d5af7a;
+    font-size: 35px;
+    font-family: 'tlou', sans-serif;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #d5af7a;
+    font-family: 'tlou', sans-serif;
+    font-size: 23px;
+}
+
+@media(max-width: 768px) {
+
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .card-2 {
+        width: 100px;
+        height: 600px;
+        font-size: 19px;
+    }
+}
